@@ -52,11 +52,12 @@ h2 {font-family: 'Chivo', Verdana, Arial, sans-serif;
     color: rgba(153,0,0,1.0);
     font-style: normal;
     line-height: 1.0em;
-    text-align: right;
+    text-align: center;
 }
 
 .first {width: 1000px;
         height: 535px;
+        position:relative;
 }
 
 .about {font-family: 'Chivo', Verdana, Arial, sans-serif;
@@ -68,7 +69,13 @@ h2 {font-family: 'Chivo', Verdana, Arial, sans-serif;
         text-align: left;
         padding: 20px;
         width: 600px;
+        position: absolute;
+        top: 50%;
+        margin-left: 375px;
+        transform: translate(0, -50%);
         float: right;
+        background-color: rgba(255,255,255,0.35);
+        border-radius: 25px;
 }
 
 figure {display: block;
@@ -99,6 +106,7 @@ img.airplane {float: left;
 /* Beginning of Section 2 */
 .second {width: 1000px;
         height: 750px;
+        position: relative;
 }
 /* Paragraph Text */
 .frames {font-family: 'Chivo', Verdana, Arial, sans-serif;
@@ -110,32 +118,25 @@ img.airplane {float: left;
         text-align: left;
         padding: 20px;
         width: 500px;
+        margin-left: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
         float: left;
+        background-color: rgba(255,255,255,0.35);
+        border-radius: 25px;
 }
 /*figure blocks didn't work*/
-.firstpic {display: block;
-           width: 288px;
-           height: 216px;
-           margin: 0px;
-           float: right;
-}
-/* figure blocks didn't work*/
-.secondpic {display: block;
-            width: 288px;
-            height: 216px;
-            margin: 0px;
-            float: right;
+
+.secondpics {display: block;
+             width: 288px;
+             height: 216px;
+             float: right;
+             clear:both;
 }
 
-.thirdpic {display: block;
-            width: 288px;
-            height: 162px;
-            margin: 0px;
-            float: right;
-            clear: both;
-}
-
-img.field {margin-right: 36px;
+img.field {display: block;
+           margin-right: 36px;
            margin-top: 30px;
            width: 288px;
            padding: 6px;
@@ -159,6 +160,7 @@ img.usa {margin-right: 36px;
 /* Beginning of Section 3 */
 .third {width: 1000px;
         height: 565px;
+        position: relative;
 }
 
 /* Paragraph Text */
@@ -172,7 +174,13 @@ img.usa {margin-right: 36px;
         text-align: left;
         padding: 20px;
         width: 600px;
+        margin-left: 375px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
         float: right;
+        background-color: rgba(255,255,255,0.35);
+        border-radius: 25px;
 }
 
 /* Crafted Pictures */
@@ -208,6 +216,8 @@ img.dresser {margin-left: 36px;
 }
 
 #container {display: flex;
+            flex-direction: row;
+            align-items: baseline;
             justify-content: space-between;
 }
 
@@ -245,6 +255,10 @@ figcaption {font-family: 'Chivo', Verdana, Arial, sans-serif;
             margin: 5px;
             color: rgba(0,0,0,1.0);
             padding: 5px;
+            text-align: center;
+            background-color: rgba(255,255,255,0.35);
+            background-position: center;
+            border-radius: 5px;
 }
 
 .information {font-family: 'Chivo', Verdana, Arial, sans-serif;
@@ -257,6 +271,9 @@ figcaption {font-family: 'Chivo', Verdana, Arial, sans-serif;
               padding: 20px;
               width: 600px;
               margin-left: 175px;
+              margin-top: 50px;
+              background-color: rgba(255,255,255,0.35);
+              border-radius: 25px;
 }
 
 .woodworking:link {text-decoration: none;
