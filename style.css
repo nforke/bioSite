@@ -3,6 +3,12 @@ body {width: 1000px;
       background-color: rgba(200,200,200,0.5);
 }
 
+@media screen and (max-width: 1000px) {
+  body {
+    width:auto;
+  }
+}
+
 header {background-color: rgba(0,51,102,1.0);
         font-family: 'Chivo', Verdana, Arial, sans-serif;
         font-weight: 400;
@@ -33,7 +39,7 @@ a:hover {text-decoration: none;
          color: rgba(153,0,0,1.0);
 }
 
-hr {border-top: 2px solid rgba(102,51,0,1.0)
+hr {border-top: 2px solid rgba(102,51,0,1.0);
 }
 
 h1 {font-family: 'Acme',Verdana, Arial, sans-serif;
@@ -185,7 +191,7 @@ img.usa {margin-right: 36px;
 
 /* Crafted Pictures */
 
-img.guitar {margin-left: 36px;
+img.guitar {margin-left: 30px;
             margin-top: 30px;
             width: 288px;
             padding: 6px;
@@ -210,9 +216,8 @@ img.dresser {margin-left: 36px;
 
 .column {width: 250px;
          padding: 20px;
-         margin-left: 20px;
-         margin-right: 20px;
-         float: left;
+         margin-left: 0px;
+         margin-right: 45px;
 }
 
 #container {display: flex;
@@ -223,17 +228,14 @@ img.dresser {margin-left: 36px;
 
 img.firstguitar {width: 288px;
                  height: 181px;
-                 margin-right: 36px;
 }
 
 img.jefferson {width: 229px;
                height: 288px;
-               margin-right: 36px;
 }
 
 img.artwork {width: 229px;
              height: 288px;
-             margin-left: 10px;
 }
 
 .firstguitar {height: 190px;
@@ -245,7 +247,7 @@ img.artwork {width: 229px;
 }
 
 .artwork {height: 297px;
-          width: 201px;
+          width: 229px;
 }
 
 figcaption {font-family: 'Chivo', Verdana, Arial, sans-serif;
